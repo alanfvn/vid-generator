@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
+    "fluent-ffmpeg": "^2.1.2",
     "text-to-image": "^5.2.0",
     "youtube-videos-uploader": "^2.0.18"
   }

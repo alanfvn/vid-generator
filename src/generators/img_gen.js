@@ -12,7 +12,9 @@ async function generateText(course, date) {
       verticalAlign: 'center',
       textAlign: 'center'
     })
-  return image
+  return Buffer.from(image.split(",")[1], 'base64'); 
 }
+
+
 
 export default generateText

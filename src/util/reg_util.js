@@ -1,4 +1,4 @@
-import VideoData from "./models/video_data.js";
+import VideoData from "../models/video_data.js";
 
 const FILE_PATTERN = /(\d+-\d+-\d+)_([\w]+)/
 const COURSES = [
@@ -11,7 +11,7 @@ const COURSES = [
 
 function normalizeString(str){
   str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  str = str.toLowerCase().replace('.', '');
+  str = str.toLowerCase().replaceAll('.', '');
   return str
 }
 
@@ -46,7 +46,7 @@ function extractData(file){
   // we assume the file passed is correct
   const match = FILE_PATTERN.exec(file)
   const cdate = match[1]
-  const cname = match[2].replace('_', ' ');
+  const cname = match[2].replaceAll('_', ' ');
 
   // try to find the course name
   const course = findCourse(cname)

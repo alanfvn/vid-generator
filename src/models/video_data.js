@@ -8,6 +8,10 @@ class VideoData{
   getDate(){
     return this.date.toISOString().split("T")[0]
   }
+
+  getOutName(){
+    return `${this.getDate()}, ${this.course}`
+  }
 }
 
 export default VideoData
