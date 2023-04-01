@@ -1,0 +1,7 @@
+node_modules/
+yt-auth/
+.env
+files/input/*
+files/output/*
+!files/input/.gitignore
+!files/output/.gitignore
