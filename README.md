@@ -1,9 +1,9 @@
 # Video Uploader
 
-Generate videos based of audio files and automatically upload them to youtube.
+Generate videos based on audio files and automatically upload them to youtube.
 
 ## Requirements
-
+- [ffmpeg](https://ffmpeg.org/download.html)
 
 ## Environment variables
 - `EMAIL` email of your YouTube account
